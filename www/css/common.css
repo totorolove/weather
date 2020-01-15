@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+#hdbar {
+    background-color: white;
+    border-bottom: 1px solid #efefef;
+    vertical-align: middle;
+}
+
+img {
+    width: 70px;
+    height: 40px;  
+}
+
+#hdbar_l {
+    padding: 0px;
+}
+
+#logo {
+    display: inline-block;
+    color: #666;
+    margin-left: 0.4em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+section {
+    background-color: white;
+    overflow: auto;
+    background-size: cover;
+    background-position: center;
+    color: white;
+/*    color: #444;*/
+    text-shadow: 0.02em 0.02em 0.5em rgba(0,0,0,1);
+/*    background-image: url(../images/day.jpg);*/
+}
+
+#mid {
+    height: 110px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#bot {
+    height: 110px;
+    padding-top: 5px;
+}
+
+.fdate {
+    font-size: 1em;
+}
+.ftemp {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#bot svg {
+    font-size: 2.6em;
+    padding: 5px 0px;
+}
+
+#top {
+    position: relative;
+}
+
+#top>div {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+#city {
+    font-size: 2.3em;
+}
+
+#top>div>svg { /* <i> => <svg>*/
+    font-size: 7em;
+}
+
+#date {
+    margin-bottom: 0px;
+}
+
+#info {
+    font-size: 1.2em;
+}
+
+.stxt {
+    font-size: 1.8em!important;
+}
+
+.temp {
+    font-size: 4.5em;
+    text-align: center;
+    line-height: 90px;
+    font-weight: bold;
+}
+
+.temp::after {
+    content: "\2103";
+    font-size: 0.4em;
+    vertical-align: top;
+    font-weight: 100;
+}
+
+.row {
+    margin: 0!important;
+}
+
+#speed::after {
+    content: "m/s";
+    margin-left: -0.05em;
+    font-size: 0.7em;
+}
+
+#hum::after {
+    content: "%";
+    margin-left: -0.05em;
+    font-size: 0.7em;
+}
+
+.etc,
+.minmax {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 0em!important;
+    padding-right: 0em!important;
+}
+
+#min::after,
+#max::after {
+    content: "\2103";
+    font-size: 0.7em;
+    vertical-align:text-top;
+}
+
+.minmax svg:first-of-type {
+    border-top: 3px solid white;
+}
+
+.minmax svg:last-of-type {
+    border-bottom: 3px solid white;
+}
+
+.fc {
+   float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.ftemp::after {
+    content: "\2103";
+}
+
+@media all and (orientation:landscape) {
+    #hdbar { 
+        background-color: #f8fbfb;
+        height: 60px;
+    }
+    
+    #top {
+        width: 40%;
+        float: left;
+        height: calc(100vh - 60px)!important; /* vh:viewport height */
+    }
+    
+    #midbot {
+        width: 60%;
+        float: left;
+        background-color: rgba(0,0,0,0.2);
+    }
+ 
+    #mid, #bot {
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
